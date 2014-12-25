@@ -1,0 +1,14 @@
+!!!
+%html
+  %head
+    %title
+    %link{href: "/home.css", rel: "stylesheet", type: "text/css"}
+    %script{src: "/jquery.min.js"}
+    %script{src: "/main.js"}
+  %body
+    .wrapper
+      %nav
+        %ul
+          %li
+            %a{href: "/"} Home
+      =yield
