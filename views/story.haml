@@ -1,0 +1,7 @@
+.content-wrapper
+  .image
+    %img{src: Dir["public/images/*"][(rand*4).ceil - 1].gsub("public/", ""), height: 200}
+  .hn-comment
+    ="\"#{@story}\""
+.clear
+%a.new{href: "/"} New story
